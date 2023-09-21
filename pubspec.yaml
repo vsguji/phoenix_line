@@ -1,7 +1,8 @@
 name: phoenix_line
 description: A new Flutter package project.
-version: 1.0.0
+version: 1.0.1
 homepage: 'https://github.com/vsguji/phoenix_line.git'
+publish_to: 'https://github.com/vsguji/phoenix_line.git'
 
 environment:
   sdk: '>=3.1.2 <4.0.0'
