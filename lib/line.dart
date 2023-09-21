@@ -2,7 +2,7 @@
  * @Author: lipeng 1162423147@qq.com
  * @Date: 2022-04-29 17:06:50
  * @LastEditors: lipeng 1162423147@qq.com
- * @LastEditTime: 2023-09-21 20:18:44
+ * @LastEditTime: 2023-09-21 20:39:17
  * @FilePath: /phoenix_line/lib/brn_line.dart
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -38,7 +38,7 @@ class Line extends StatelessWidget {
   /// 右边缩进距离
   final double rightInset;
 
-  Line({
+  const Line({
     Key? key,
     this.color,
     this.height = 0.5,
@@ -49,11 +49,11 @@ class Line extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: this.leftInset, right: this.rightInset),
+      padding: EdgeInsets.only(left: leftInset, right: rightInset),
       child: Divider(
-        thickness: this.height,
-        height: this.height,
-        color: this.color ??
+        thickness: height,
+        height: height,
+        color: color ??
             BaseThemeConfig.instance.getConfig().commonConfig.dividerColorBase,
       ),
     );
