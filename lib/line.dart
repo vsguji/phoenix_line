@@ -2,7 +2,7 @@
  * @Author: lipeng 1162423147@qq.com
  * @Date: 2022-04-29 17:06:50
  * @LastEditors: lipeng 1162423147@qq.com
- * @LastEditTime: 2023-09-21 20:39:17
+ * @LastEditTime: 2023-10-12 09:21:39
  * @FilePath: /phoenix_line/lib/brn_line.dart
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -15,9 +15,9 @@ import 'package:phoenix_base/phoenix.dart';
 /// 系统提供的[Divider]组件，当设置的高度过大时，会出现中间一条线，
 ///
 /// ```dart
-///   BrnLine()
+///   Line()
 ///
-///   BrnLine(
+///   Line(
 ///      leftInset: 20,
 ///   )
 ///

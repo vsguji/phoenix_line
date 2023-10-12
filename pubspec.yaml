@@ -1,6 +1,6 @@
 name: phoenix_line
 description: phoenix Flutter 企业级基础组件:Line 组件
-version: 1.0.0
+version: 1.0.1
 homepage: 'https://github.com/vsguji/phoenix_line.git'
 
 environment:

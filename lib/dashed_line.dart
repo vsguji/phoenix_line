@@ -33,7 +33,7 @@ const double _normalDashedSpacing = 4;
 const DashedLinePosition _normalPosition = DashedLinePosition.leading;
 
 /// 虚线分割线
-class BrnDashedLine extends StatelessWidget {
+class DashedLine extends StatelessWidget {
   /// 虚线方向，默认值[_normalAxis]
   final Axis axis;
 
@@ -58,7 +58,7 @@ class BrnDashedLine extends StatelessWidget {
   /// 分割线所在位置，默认值[_normalPosition]
   final DashedLinePosition position;
 
-  const BrnDashedLine({
+  const DashedLine({
     super.key,
     required this.contentWidget,
     this.axis = _normalAxis,
@@ -73,7 +73,7 @@ class BrnDashedLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      painter: BrnDashedPainter(
+      painter: DashedPainter(
           axis: axis,
           dashedLength: dashedLength,
           dashedThickness: dashedThickness,
@@ -86,7 +86,7 @@ class BrnDashedLine extends StatelessWidget {
   }
 }
 
-class BrnDashedPainter extends CustomPainter {
+class DashedPainter extends CustomPainter {
   /// 虚线方向
   final Axis axis;
 
@@ -108,7 +108,7 @@ class BrnDashedPainter extends CustomPainter {
   /// 分割线所在位置
   final DashedLinePosition? position;
 
-  BrnDashedPainter({
+  DashedPainter({
     this.axis = _normalAxis,
     this.dashedLength = _normalDashedLength,
     this.dashedThickness = _normalDashedThickness,
